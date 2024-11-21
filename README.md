@@ -52,10 +52,3 @@ mall4cloud
 | mall4cloud-search      搜索服务                      | http://127.0.0.1:9108 |
 | mall4cloud-user          用户服务                    | http://127.0.0.1:9105 |
 
-
-
-## 你的点赞鼓励，是我们前进的动力~
-## 你的点赞鼓励，是我们前进的动力~
-## 你的点赞鼓励，是我们前进的动力~
-
-## 更多信息请查看官网 [https://www.mall4j.com](https://www.mall4j.com)
