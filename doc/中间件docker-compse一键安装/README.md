@@ -34,7 +34,7 @@ docker compose up -d --build
  - rocketmq-dashboard：http://47.100.81.138:8180 未配置密码，请自行配置
 
 
-6.访问minio管理页面，创建存储区域(Create Bucker) 名为`mall4cloud`
+6.访问minio管理页面，创建存储区域(Create Bucker) 名为`storecloud`
 
 ![image-20210616090042502](../img/中间件安装/minio新建桶.png)
 

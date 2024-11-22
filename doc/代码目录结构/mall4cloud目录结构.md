@@ -44,7 +44,7 @@
 
 
 
-关于`FeignClient`，由于微服务之间存在互相调用，`Feign` 是http协议，理论上是为了解耦，而实际上提供方接口进行修改，调用方却没有进行修改的时候，会造成异常，所以我们抽取出来。还有就是对内暴露的接口，是很多地方都公用的，所以我们还将接口抽取了出了一个模块，方便引用。可以看到`mall4cloud-api`这个模块下是所有对内`feign`接口的信息。
+关于`FeignClient`，由于微服务之间存在互相调用，`Feign` 是http协议，理论上是为了解耦，而实际上提供方接口进行修改，调用方却没有进行修改的时候，会造成异常，所以我们抽取出来。还有就是对内暴露的接口，是很多地方都公用的，所以我们还将接口抽取了出了一个模块，方便引用。可以看到`storecloud-api`这个模块下是所有对内`feign`接口的信息。
 
 
 
@@ -53,36 +53,36 @@
 ## 目录结构
 
 ```
-mall4cloud
-├─mall4cloud-api -- 内网接口
-│  ├─mall4cloud-api-auth  -- 授权对内接口
-│  ├─mall4cloud-api-biz  -- biz对内接口
-│  ├─mall4cloud-api-leaf  -- 美团分布式id生成接口
-│  ├─mall4cloud-api-multishop  -- 店铺对内接口
-│  ├─mall4cloud-api-order  -- 订单对内接口
-│  ├─mall4cloud-api-platform  -- 平台对内接口
-│  ├─mall4cloud-api-product  -- 商品对内接口
-│  ├─mall4cloud-api-rbac  -- 用户角色权限对内接口
-│  ├─mall4cloud-api-search  -- 搜索对内接口
-│  └─mall4cloud-api-user  -- 用户对内接口
-├─mall4cloud-auth  -- 授权校验模块
-├─mall4cloud-biz  -- mall4cloud 业务代码。如图片上传/短信等
-├─mall4cloud-common -- 一些公共的方法
-│  ├─mall4cloud-common-cache  -- 缓存相关公共代码
-│  ├─mall4cloud-common-core  -- 公共模块核心（公共中的公共代码）
-│  ├─mall4cloud-common-database  -- 数据库连接相关公共代码
-│  ├─mall4cloud-common-order  -- 订单相关公共代码
-│  ├─mall4cloud-common-product  -- 商品相关公共代码
-│  ├─mall4cloud-common-rocketmq  -- rocketmq相关公共代码
-│  └─mall4cloud-common-security  -- 安全相关公共代码
-├─mall4cloud-gateway  -- 网关
-├─mall4cloud-leaf  -- 基于美团leaf的生成id服务
-├─mall4cloud-multishop  -- 商家端
-├─mall4cloud-order  -- 订单服务
-├─mall4cloud-payment  -- 支付服务
-├─mall4cloud-platform  -- 平台端
-├─mall4cloud-product  -- 商品服务
-├─mall4cloud-rbac  -- 用户角色权限模块
-├─mall4cloud-search  -- 搜索模块
-└─mall4cloud-user  -- 用户服务
+storecloud
+├─storecloud-api -- 内网接口
+│  ├─storecloud-api-auth  -- 授权对内接口
+│  ├─storecloud-api-biz  -- biz对内接口
+│  ├─storecloud-api-leaf  -- 美团分布式id生成接口
+│  ├─storecloud-api-multishop  -- 店铺对内接口
+│  ├─storecloud-api-order  -- 订单对内接口
+│  ├─storecloud-api-platform  -- 平台对内接口
+│  ├─storecloud-api-product  -- 商品对内接口
+│  ├─storecloud-api-rbac  -- 用户角色权限对内接口
+│  ├─storecloud-api-search  -- 搜索对内接口
+│  └─storecloud-api-user  -- 用户对内接口
+├─storecloud-auth  -- 授权校验模块
+├─storecloud-biz  -- storecloud 业务代码。如图片上传/短信等
+├─storecloud-common -- 一些公共的方法
+│  ├─storecloud-common-cache  -- 缓存相关公共代码
+│  ├─storecloud-common-core  -- 公共模块核心（公共中的公共代码）
+│  ├─storecloud-common-database  -- 数据库连接相关公共代码
+│  ├─storecloud-common-order  -- 订单相关公共代码
+│  ├─storecloud-common-product  -- 商品相关公共代码
+│  ├─storecloud-common-rocketmq  -- rocketmq相关公共代码
+│  └─storecloud-common-security  -- 安全相关公共代码
+├─storecloud-gateway  -- 网关
+├─storecloud-leaf  -- 基于美团leaf的生成id服务
+├─storecloud-multishop  -- 商家端
+├─storecloud-order  -- 订单服务
+├─storecloud-payment  -- 支付服务
+├─storecloud-platform  -- 平台端
+├─storecloud-product  -- 商品服务
+├─storecloud-rbac  -- 用户角色权限模块
+├─storecloud-search  -- 搜索模块
+└─storecloud-user  -- 用户服务
 ```

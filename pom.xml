@@ -4,24 +4,24 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.mall4j.cloud</groupId>
-    <artifactId>mall4cloud</artifactId>
+    <groupId>com.store.cloud</groupId>
+    <artifactId>storecloud</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>mall4cloud-gateway</module>
-        <module>mall4cloud-auth</module>
-        <module>mall4cloud-common</module>
-        <module>mall4cloud-rbac</module>
-        <module>mall4cloud-leaf</module>
-        <module>mall4cloud-api</module>
-        <module>mall4cloud-multishop</module>
-        <module>mall4cloud-platform</module>
-        <module>mall4cloud-biz</module>
-        <module>mall4cloud-product</module>
-        <module>mall4cloud-search</module>
-        <module>mall4cloud-user</module>
-        <module>mall4cloud-order</module>
-        <module>mall4cloud-payment</module>
+        <module>storecloud-gateway</module>
+        <module>storecloud-auth</module>
+        <module>storecloud-common</module>
+        <module>storecloud-rbac</module>
+        <module>storecloud-leaf</module>
+        <module>storecloud-api</module>
+        <module>storecloud-multishop</module>
+        <module>storecloud-platform</module>
+        <module>storecloud-biz</module>
+        <module>storecloud-product</module>
+        <module>storecloud-search</module>
+        <module>storecloud-user</module>
+        <module>storecloud-order</module>
+        <module>storecloud-payment</module>
     </modules>
     <packaging>pom</packaging>
 

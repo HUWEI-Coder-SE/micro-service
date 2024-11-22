@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>storecloud</artifactId>
+        <groupId>com.store.cloud</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>storecloud-api</artifactId>
+    <packaging>pom</packaging>
+
+    <description>storecloud 内网接口</description>
+    <modules>
+        <module>storecloud-api-auth</module>
+        <module>storecloud-api-biz</module>
+        <module>storecloud-api-rbac</module>
+        <module>storecloud-api-leaf</module>
+        <module>storecloud-api-product</module>
+        <module>storecloud-api-multishop</module>
+        <module>storecloud-api-user</module>
+        <module>storecloud-api-order</module>
+        <module>storecloud-api-search</module>
+        <module>storecloud-api-platform</module>
+    </modules>
+
+</project>

@@ -1,18 +1,18 @@
-create database IF NOT EXISTS mall4cloud_auth default character set utf8 collate utf8_general_ci;
-create database IF NOT EXISTS `mall4cloud_biz` default character set utf8 collate utf8_general_ci;
-create database IF NOT EXISTS `mall4cloud_leaf` default character set utf8 collate utf8_general_ci;
-create database IF NOT EXISTS `mall4cloud_multishop` default character set utf8 collate utf8_general_ci;
-create database IF NOT EXISTS `mall4cloud_nacos` default character set utf8 collate utf8_general_ci;
-create database IF NOT EXISTS `mall4cloud_order` default character set utf8 collate utf8_general_ci;
-create database IF NOT EXISTS `mall4cloud_payment` default character set utf8 collate utf8_general_ci;
-create database IF NOT EXISTS `mall4cloud_platform` default character set utf8 collate utf8_general_ci;
-create database IF NOT EXISTS `mall4cloud_product` default character set utf8 collate utf8_general_ci;
-create database IF NOT EXISTS `mall4cloud_rbac` default character set utf8 collate utf8_general_ci;
-create database IF NOT EXISTS `mall4cloud_seata` default character set utf8 collate utf8_general_ci;
-create database IF NOT EXISTS `mall4cloud_user` default character set utf8 collate utf8_general_ci;
+create database IF NOT EXISTS storecloud_auth default character set utf8 collate utf8_general_ci;
+create database IF NOT EXISTS `storecloud_biz` default character set utf8 collate utf8_general_ci;
+create database IF NOT EXISTS `storecloud_leaf` default character set utf8 collate utf8_general_ci;
+create database IF NOT EXISTS `storecloud_multishop` default character set utf8 collate utf8_general_ci;
+create database IF NOT EXISTS `storecloud_nacos` default character set utf8 collate utf8_general_ci;
+create database IF NOT EXISTS `storecloud_order` default character set utf8 collate utf8_general_ci;
+create database IF NOT EXISTS `storecloud_payment` default character set utf8 collate utf8_general_ci;
+create database IF NOT EXISTS `storecloud_platform` default character set utf8 collate utf8_general_ci;
+create database IF NOT EXISTS `storecloud_product` default character set utf8 collate utf8_general_ci;
+create database IF NOT EXISTS `storecloud_rbac` default character set utf8 collate utf8_general_ci;
+create database IF NOT EXISTS `storecloud_seata` default character set utf8 collate utf8_general_ci;
+create database IF NOT EXISTS `storecloud_user` default character set utf8 collate utf8_general_ci;
 
 
-USE mall4cloud_auth;
+USE storecloud_auth;
 
 -- ----------------------------
 -- Table structure for auth_account
@@ -60,7 +60,7 @@ CREATE TABLE `undo_log`  (
 
 
 
-USE mall4cloud_biz;
+USE storecloud_biz;
 
 -- ----------------------------
 -- Table structure for attach_file
@@ -112,7 +112,7 @@ CREATE TABLE `undo_log`  (
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci;
 
 
-USE mall4cloud_leaf;
+USE storecloud_leaf;
 
 -- ----------------------------
 -- Table structure for leaf_alloc
@@ -131,15 +131,15 @@ CREATE TABLE `leaf_alloc`  (
 -- ----------------------------
 -- Records of leaf_alloc
 -- ----------------------------
-INSERT INTO `leaf_alloc` VALUES ('mall4cloud-auth-account', 112000, 100, '2021-07-01 14:16:40', 'mall4cloud-multishop数据库中auth_account这张表的uid', 10);
-INSERT INTO `leaf_alloc` VALUES ('mall4cloud-multishop-user', 110400, 100, '2021-07-01 11:10:32', 'mall4cloud-multishop数据库中shop_user这张表的id', 10);
-INSERT INTO `leaf_alloc` VALUES ('mall4cloud-order', 1568693084, 100, '2021-07-05 15:25:19', '订单id', 10);
-INSERT INTO `leaf_alloc` VALUES ('mall4cloud-pay', 564994845, 100, '2021-07-05 15:14:40', '支付单号', 10);
-INSERT INTO `leaf_alloc` VALUES ('mall4cloud-platform-user', 101600, 100, '2021-07-03 13:13:54', 'mall4cloud-platform数据库中sys_user这张表的id', 10);
-INSERT INTO `leaf_alloc` VALUES ('mall4cloud-user', 106600, 100, '2021-07-01 11:22:26', 'mall4cloud-user数据库中user这张表的id', 10);
+INSERT INTO `leaf_alloc` VALUES ('storecloud-auth-account', 112000, 100, '2021-07-01 14:16:40', 'storecloud-multishop数据库中auth_account这张表的uid', 10);
+INSERT INTO `leaf_alloc` VALUES ('storecloud-multishop-user', 110400, 100, '2021-07-01 11:10:32', 'storecloud-multishop数据库中shop_user这张表的id', 10);
+INSERT INTO `leaf_alloc` VALUES ('storecloud-order', 1568693084, 100, '2021-07-05 15:25:19', '订单id', 10);
+INSERT INTO `leaf_alloc` VALUES ('storecloud-pay', 564994845, 100, '2021-07-05 15:14:40', '支付单号', 10);
+INSERT INTO `leaf_alloc` VALUES ('storecloud-platform-user', 101600, 100, '2021-07-03 13:13:54', 'storecloud-platform数据库中sys_user这张表的id', 10);
+INSERT INTO `leaf_alloc` VALUES ('storecloud-user', 106600, 100, '2021-07-01 11:22:26', 'storecloud-user数据库中user这张表的id', 10);
 
 
-USE mall4cloud_multishop;
+USE storecloud_multishop;
 
 -- ----------------------------
 -- Table structure for hot_search
@@ -235,7 +235,7 @@ CREATE TABLE `undo_log`  (
 
 
 
-USE mall4cloud_order;
+USE storecloud_order;
 
 
 -- ----------------------------
@@ -342,7 +342,7 @@ CREATE TABLE `undo_log`  (
 ) ENGINE = InnoDB AUTO_INCREMENT = 74 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci;
 
 
-USE mall4cloud_payment;
+USE storecloud_payment;
 
 
 -- ----------------------------
@@ -387,7 +387,7 @@ CREATE TABLE `undo_log`  (
 ) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci;
 
 
-USE mall4cloud_platform;
+USE storecloud_platform;
 
 
 -- ----------------------------
@@ -442,7 +442,7 @@ CREATE TABLE `undo_log`  (
 ) ENGINE = InnoDB AUTO_INCREMENT = 325 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci;
 
 
-USE mall4cloud_product;
+USE storecloud_product;
 
 
 -- ----------------------------
@@ -776,7 +776,7 @@ CREATE TABLE `undo_log`  (
 ) ENGINE = InnoDB AUTO_INCREMENT = 254 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci;
 
 
-USE mall4cloud_rbac;
+USE storecloud_rbac;
 
 
 -- ----------------------------
@@ -1008,7 +1008,7 @@ CREATE TABLE `user_role`  (
 -- ----------------------------
 
 
-USE mall4cloud_user;
+USE storecloud_user;
 
 
 -- ----------------------------

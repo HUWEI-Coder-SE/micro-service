@@ -38,7 +38,7 @@ seata:
       # mysql8及以上版本对应的driver：com.mysql.cj.jdbc.Driver
       # mysql8以下版本的driver：com.mysql.jdbc.Driver
       driverClassName: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://47.100.81.138:3306/mall4cloud_seata?useUnicode=true&characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useSSL=false&rewriteBatchedStatements=true
+      url: jdbc:mysql://47.100.81.138:3306/storecloud_seata?useUnicode=true&characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useSSL=false&rewriteBatchedStatements=true
       user: root
       password: root
 
